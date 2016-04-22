@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>javaweb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>first</servlet-name>
+  	<servlet-class>cyiq002.servlet.FirstServlet</servlet-class>
+  	<init-param>
+  		<param-name>initParam</param-name>
+  		<param-value>初始化参数</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>first</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>context</servlet-name>
+  	<servlet-class>cyiq002.servlet.ServletContextTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>context</servlet-name>
+  	<url-pattern>/context</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>response</servlet-name>
+  	<servlet-class>cyiq002.servlet.ResponseTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>response</servlet-name>
+  	<url-pattern>/response</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>response2</servlet-name>
+  	<servlet-class>cyiq002.servlet.ResponseTest2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>responseCN</servlet-name>
+    <servlet-class>cyiq002.servlet.ResponseCNTest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>responseCN2</servlet-name>
+    <servlet-class>cyiq002.servlet.ResponseCNTest2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>requestCN</servlet-name>
+    <servlet-class>cyiq002.servlet.RequestCNTest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>foward</servlet-name>
+    <servlet-class>cyiq002.servlet.FowardServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>redirect</servlet-name>
+    <servlet-class>cyiq002.servlet.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>cookie</servlet-name>
+    <servlet-class>cyiq002.cookie.CookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>readcookie</servlet-name>
+    <servlet-class>cyiq002.cookie.ReadCookieServlet</servlet-class>
+  </servlet>
+	<servlet>
+		<servlet-name>durablecookie</servlet-name>
+		<servlet-class>cyiq002.cookie.DurableCookieServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>cncookie</servlet-name>
+    <servlet-class>cyiq002.cookie.CNCookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getImage</servlet-name>
+    <servlet-class>cyiq002.image.GetImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>cyiq002.image.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>tomcat</servlet-name>
+    <servlet-class>cyiq002.tomcat.Tomcat</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>page.PageServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>response2</servlet-name>
+  	<url-pattern>/response2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>responseCN</servlet-name>
+    <url-pattern>/responseCN</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>responseCN2</servlet-name>
+    <url-pattern>/responseCN2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>requestCN</servlet-name>
+    <url-pattern>/requestCN</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>foward</servlet-name>
+    <url-pattern>/foward</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>redirect</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>cookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>readcookie</servlet-name>
+    <url-pattern>/readcookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>durablecookie</servlet-name>
+  	<url-pattern>/durablecookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>cncookie</servlet-name>
+    <url-pattern>/cncookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getImage</servlet-name>
+    <url-pattern>/getImage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>tomcat</servlet-name>
+    <url-pattern>/tomcat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/pageServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
